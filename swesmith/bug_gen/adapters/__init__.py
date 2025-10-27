@@ -12,6 +12,8 @@ from swesmith.bug_gen.adapters.rust import get_entities_from_file_rs
 get_entities_from_file = {
     ".c": get_entities_from_file_c,
     ".cpp": get_entities_from_file_cpp,
+    ".hpp": get_entities_from_file_cpp,  # C++ header files
+    ".h": get_entities_from_file_cpp,  # C/C++ header files
     ".cs": get_entities_from_file_c_sharp,
     ".go": get_entities_from_file_go,
     ".java": get_entities_from_file_java,

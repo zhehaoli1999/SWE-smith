@@ -16,4 +16,5 @@ MAP_EXT_TO_MODIFIERS = {
     ".py": MODIFIERS_PYTHON,
     ".cpp": MODIFIERS_CPP,
     ".hpp": MODIFIERS_CPP,
+    ".h": MODIFIERS_CPP,
 }
