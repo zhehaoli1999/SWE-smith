@@ -7,6 +7,8 @@ elif [ -f "/opt/miniconda3/bin/activate" ]; then
     . /opt/miniconda3/bin/activate
 elif [ -f "$HOME/miniconda3/bin/activate" ]; then
     . $HOME/miniconda3/bin/activate
+elif [ -f "$HOME/opt/miniconda3/bin/activate" ] ; then
+    . $HOME/opt/miniconda3/bin/activate
 else
     echo "Error: Could not find conda installation"
     exit 1

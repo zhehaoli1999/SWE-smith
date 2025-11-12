@@ -19,16 +19,20 @@ from swesmith.bug_gen.procedural.cpp.remove import (
     RemoveConditionalModifier,
     RemoveLoopModifier,
 )
+from swesmith.bug_gen.procedural.cpp.replace_strings import (
+    ReplaceStringTypoModifier,
+)
 
 MODIFIERS_CPP: list[ProceduralModifier] = [
-    ControlIfElseInvertModifier(likelihood=0.75),
-    ControlShuffleLinesModifier(likelihood=0.75),
-    RemoveAssignModifier(likelihood=0.25),
+    ControlIfElseInvertModifier(likelihood=0.9),
+    ControlShuffleLinesModifier(likelihood=0.9),
+    RemoveAssignModifier(likelihood=0.9),
     RemoveConditionalModifier(likelihood=0.25),
     RemoveLoopModifier(likelihood=0.25),
-    OperationBreakChainsModifier(likelihood=0.4),
-    OperationChangeConstantsModifier(likelihood=0.4),
-    OperationChangeModifier(likelihood=0.4),
-    OperationFlipOperatorModifier(likelihood=0.4),
-    OperationSwapOperandsModifier(likelihood=0.4),
+    OperationBreakChainsModifier(likelihood=0.9),
+    OperationChangeConstantsModifier(likelihood=0.3),
+    OperationChangeModifier(likelihood=0.3),
+    OperationFlipOperatorModifier(likelihood=0.3),
+    OperationSwapOperandsModifier(likelihood=0.3),
+    ReplaceStringTypoModifier(likelihood=0.9),
 ]

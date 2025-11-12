@@ -82,6 +82,7 @@ def main(
             ]
             if not candidates:
                 continue
+            # print(candidates)
             print(f"[{repo}] Found {len(candidates)} candidates for {pm.name}.")
 
             log_dir = LOG_DIR_BUG_GEN / repo
